@@ -1,0 +1,589 @@
+<!-- https://www.teknosa.com/login -->
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Üye Girişi | Teknosa</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="teknosa-logo">
+        <a href="https://www.teknosa.com/login"
+          ><svg
+            width="152"
+            height="42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 41h134.59S151 41 151 27.486V1.003H16.122S1 .483 1 14.256V41z"
+              fill="#F58220"
+              stroke="#fff"
+            />
+            <path
+              d="M94.015 21.013c0-6.095 5.496-11.033 12.266-11.033 6.769 0 12.266 4.938 12.266 11.033 0 6.096-5.497 11.033-12.266 11.033-6.77 0-12.266-4.937-12.266-11.033z"
+              fill="#0058A9"
+            />
+            <path
+              d="M117.851 21.013c0-6.095 5.496-11.033 12.266-11.033 6.769 0 12.266 4.938 12.266 11.033 0 6.096-5.497 11.033-12.266 11.033-6.77 0-12.266-4.937-12.266-11.033z"
+              fill="#0058A9"
+            />
+            <path
+              d="M98.143 22.832v.732c0 2.74 1.657 3.048 4.225 3.19.912.047 1.824.047 2.736.047 1.753 0 3.481-.047 5.233-.118 3.097-.213 4.537-.756 4.537-3.733 0-3.119-1.824-3.662-4.945-3.662-.912 0-1.8-.023-2.688-.023l-2.737-.048c-.936-.047-2.328.095-2.328-1.086 0-.733.768-.875 1.488-.898 1.056-.047 2.065-.095 3.121-.095.648 0 1.296 0 1.968.024.912.047 1.512.236 1.56 1.134h4.009c-.024-.756 0-1.583-.432-2.292-.96-1.417-2.809-1.44-4.465-1.465l-2.856-.047c-1.561 0-4.585.024-6.025.355-2.137.496-2.497 1.724-2.497 3.496 0 2.268.817 3.331 3.433 3.497 2.232.118 4.489.118 6.721.118h.672c.888 0 1.896.094 1.896 1.063 0 1.04-.912 1.016-1.8 1.04-.936.047-1.824.07-2.736.07-.648 0-1.297-.023-1.921-.023-.936-.048-2.088-.024-2.088-1.11 0-.072 0-.119-.024-.19h-4.057v.024z"
+              fill="#fff"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M135.973 26.705l-1.272-2.197h-8.713l-1.32 2.197h-4.537l7.489-12.049h5.521l7.321 12.05h-4.489zm-5.665-9.473l-2.88 4.772h5.761l-2.881-4.773z"
+              fill="#fff"
+            />
+            <path
+              d="M7.625 17.824h5.569v8.741h3.96v-8.741h5.57V14.94h-15.1v2.883zm15.579 8.741h14.378v-2.811H27.164V21.91h9.65V19.5h-9.65v-1.866h10.202V14.94H23.204v11.624zm15.53 0h3.96V22.1h1.753l5.713 4.465h5.617l-7.825-5.954 6.985-5.67H49.56l-5.017 4.253h-1.848V14.94h-3.96v11.624zm17.259 0h3.96v-8.458h.048l7.441 8.458h6.146V14.941h-3.961v8.435h-.048l-7.441-8.435h-6.145v11.624z"
+              fill="#fff"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M80.429 26.684c-3.553 0-5.69-.803-5.69-4.205v-3.473c0-3.402 2.113-4.205 5.69-4.205h6.36c3.553 0 5.69.803 5.69 4.205v3.473c0 3.402-2.113 4.205-5.69 4.205h-6.36zm.84-8.883c-2.089 0-2.473.874-2.473 2.316h-.024v1.252c0 1.677.384 2.315 2.257 2.315h5.065c1.896 0 2.28-.638 2.28-2.315v-1.252c0-1.442-.384-2.316-2.472-2.316h-4.633z"
+              fill="#fff"
+            /></svg
+        ></a>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="text-center my-4">Teknosa'ya Hoş Geldiniz</h3>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="home-tab"
+                  data-toggle="tab"
+                  href="#home"
+                  role="tab"
+                  aria-controls="home"
+                  aria-selected="false"
+                  >Üye Girişi</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="profile-tab"
+                  data-toggle="tab"
+                  href="#profile"
+                  role="tab"
+                  aria-controls="profile"
+                  aria-selected="true"
+                  >Üye Ol</a
+                >
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade"
+                id="home"
+                role="tabpanel"
+                aria-labelledby="home-tab"
+              >
+                <!-- ÜYE GİRİŞİ -->
+                <form class="mt-4">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="loginEmailPhone"
+                      placeholder="E-Posta / Cep Telefonu"
+                    />
+                  </div>
+                  <button type="submit" class="btn btn-submit mt-4">
+                    Devam Et
+                  </button>
+                </form>
+              </div>
+
+              <!-- ÜYE OL -->
+              <div
+                class="tab-pane fade show active"
+                id="profile"
+                role="tabpanel"
+                aria-labelledby="profile-tab"
+              >
+                <form class="mt-4">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputName"
+                        placeholder="Ad"
+                        required
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputSurname"
+                        placeholder="Soyad"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail"
+                      placeholder="E-Posta"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="inputPhone"
+                      placeholder="(5xx) xxx xx xx"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <select id="countryCode" class="country-select" required>
+                      <option value="">Bir ülke seçin</option>
+                    </select>
+                  </div>
+                  <!-- <label for="countryCode">Select a country:</label>
+                  <select id="countryCode" name="countryCode">
+                      <option value="">Select a country</option>
+                  </select> -->
+                  
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="loginPassword"
+                        placeholder="Şifre"
+                        required
+                      />
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="togglePassword" style="cursor: pointer;">
+                          <i class="fa-regular fa-eye-slash" id="eyeIcon"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- CHECKBOX PART -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="profilingPermission"
+                      data-toggle="collapse"
+                      data-target="#profilingContent"
+                      aria-expanded="false"
+                      aria-controls="profilingContent"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between align-items-center"
+                      for="profilingPermission"
+                    >
+                      Profilleme ve Kişiselleştirme İzni
+                      <i
+                        class="fas fa-chevron-down ml-2"
+                        id="profilingIcon"
+                      ></i>
+                    </label>
+                  </div>
+                  <div class="collapse" id="profilingContent">
+                    <div class="card accordion-text">
+                      <span
+                        >Bana özel oluşturulacak kampanyalardan haberdar
+                        olabilmek için kişisel verilerimin profilimin
+                        oluşturulması için işlenmesine
+                        <a
+                          href="#"
+                          data-toggle="modal"
+                          data-target="#acikRizaModal"
+                        >
+                          Açık Rıza
+                        </a>
+                        veriyorum.</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Profilleme ve Kişiselleştirme İzni -->
+                  <div
+                    class="modal fade"
+                    id="acikRizaModal"
+                    tabindex="-1"
+                    aria-labelledby="acikRizaModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="acikRizaModalLabel">
+                            Açık Rıza Metni
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body mb-3">
+                          <h6 class="text-center">
+                            PROFİLLEME / KİŞİSELLEŞTİRME İZNİ
+                          </h6>
+                          Kimlik, iletişim, konum ve dijital iz verilerimin;
+                          şirket içi segmentasyon, profilleme faaliyetlerinin
+                          gerçekleştirilmesi, tarafıma özel teklifler sunulması,
+                          müşteri memnuniyeti çalışmalarının yürütülmesi ve
+                          tarafıma kişiselleştirilmiş ticari elektronik iletiler
+                          gönderilebilmesi için Teknosa İç ve Dış Ticaret A.Ş.
+                          tarafından işlenmesine izin veriyorum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="communicationPermission"
+                      data-toggle="collapse"
+                      data-target="#communicationContent"
+                      aria-expanded="false"
+                      aria-controls="communicationContent"
+                    />
+                    <label
+                      class="form-check-label d-flex justify-content-between align-items-center"
+                      for="communicationPermission"
+                    >
+                      İletişim İzinleri
+                      <i
+                        class="fas fa-chevron-down ml-2"
+                        id="communicationIcon"
+                      ></i>
+                    </label>
+                  </div>
+                  <div class="collapse" id="communicationContent">
+                    <div class="card accordion-text">
+                      <span>
+                        <a
+                          href="#"
+                          data-toggle="modal"
+                          data-target="#iletisimizni"
+                        >
+                          İletişim İzni
+                        </a>
+                        kapsamında TeknoSA İç ve Dış Tic. A.Ş. tarafından
+                        pazarlama amaçlı ileti almak istiyorum.</span
+                      >
+                    </div>
+                    <div class="pl-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="e_posta"
+                          name="contact"
+                        />
+                        <label class="form-check-label" for="e_posta">
+                          E-Posta
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" id="sms"  name="contact"/>
+                        <label class="form-check-label" for="sms"> SMS </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="phone"
+                          name="contact"
+                        />
+                        <label class="form-check-label" for="phone">
+                          Çağrı Merkezi / Telefon
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- İtelişimİzni -->
+                  <div
+                    class="modal fade"
+                    id="iletisimizni"
+                    tabindex="-1"
+                    aria-labelledby="iletisimizniLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="iletisimizniModalLabel">
+                            İletişim İzni
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body mb-3">
+                          Kişisel verilerimin TeknoSA İç ve Dış Tic. A.Ş.
+                          (“Şirket”) tarafından doğrudan veya dolaylı pazarlama
+                          faaliyetlerinin gerçekleştirilmesi amacıyla işlenmesi
+                          suretiyle iletişim bilgilerime; reklam, promosyon,
+                          kampanya ve benzeri nitelikte genel ve özel
+                          kampanyalar, avantajlar, ürün, hizmet tanıtımları,
+                          reklâm, pazar araştırması anketleri ve diğer müşteri
+                          memnuniyeti uygulamalarına ilişkin olarak kısa mesaj
+                          (SMS), mobil uygulama, anlık bildirim, e-posta,
+                          otomatik makinelerden arama, telefonla arama,
+                          bluetooth, beacon kablosuz ağlar, sosyal medya vb. her
+                          türlü elektronik iletişim aracı ile ticari elektronik
+                          ileti gönderilmesine onay veriyorum ve bu amaçla
+                          sınırlı olarak kişisel verilerimin Şirket’in hizmet
+                          aldığı üçüncü kişilerle paylaşılmasını kabul ediyorum
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-submit mt-4">
+                    Onay Kodu İste
+                  </button>
+                  <small class="form-text text-muted mt-3">
+                    Onay Kodu iste butonuna basarak
+                    <span>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#uyelikSozlesmesi"
+                      >
+                        Üyelik Sözleşmesini
+                      </a> </span
+                    >, ve kişisel verilerin yurt dışına aktarılmasına ilişkin
+                    <span>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#acikRizaMetni"
+                      >
+                        Açık Rıza Metnini
+                      </a>
+                    </span>
+                    okuduğunuzu ve kabul ettiğinizi onaylıyorsunuz.
+                  </small>
+                  <!-- Üyelik Sözleşmesi -->
+                  <div
+                    class="modal fade"
+                    id="uyelikSozlesmesi"
+                    tabindex="-1"
+                    aria-labelledby="uyelikSozlesmesiLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5
+                            class="modal-title"
+                            id="uyelikSozlesmesiModalLabel"
+                          >
+                            Üyelik Sözleşmesi
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body mb-3">
+                          ÜYELIK SÖZLESMESI www.teknosa.com alan adli isbu
+                          internet sitesini (Kisaca "SITE" olarak anilacaktir)
+                          kullanmak için lütfen asagida yazili kosullari
+                          okuyunuz. Bu SITE’de sunulan hizmetlerden
+                          yararlananlar veya herhangi bir sekilde SITE’ye erisim
+                          saglayan her gerçek ve tüzel kisi asagidaki kullanim
+                          kosullarini kabul etmis sayilmaktadir.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Açık Rıza Metni -->
+                  <div
+                    class="modal fade"
+                    id="acikRizaMetni"
+                    tabindex="-1"
+                    aria-labelledby="acikRizaMetniLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="acikRizaMetniModalLabel">
+                            Açık Rıza Metni
+                          </h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body mb-3">
+                          Teknosa’nın aydınlatma metninde gerçekleştirmekte
+                          olduğunu belirttiği faaliyetleri kapsamında hizmet
+                          aldığı tedarikçilerinin sunucularının yurt dışında
+                          bulunuyor olması nedeniyle kişisel verilerimin yurt
+                          dışına aktarılmasına onay veriyorum.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="social-login">
+          <div>
+            <a href="#" class="btn">
+              <svg
+                width="40px"
+                height="40px"
+                viewBox="-0.5 0 48 48"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>Google-color</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Icons"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Color-"
+                      transform="translate(-401.000000, -860.000000)"
+                    >
+                      <g
+                        id="Google"
+                        transform="translate(401.000000, 860.000000)"
+                      >
+                        <path
+                          d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24"
+                          id="Fill-1"
+                          fill="#FBBC05"
+                        ></path>
+                        <path
+                          d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333"
+                          id="Fill-2"
+                          fill="#EB4335"
+                        ></path>
+                        <path
+                          d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667"
+                          id="Fill-3"
+                          fill="#34A853"
+                        ></path>
+                        <path
+                          d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24"
+                          id="Fill-4"
+                          fill="#4285F4"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>Google ile Bağlan</p>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="btn">
+              <svg
+                fill="#0057ac"
+                width="40px"
+                height="40px"
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M 19.253906 2 C 15.311906 2 13 4.0821719 13 8.8261719 L 13 13 L 8 13 L 8 18 L 13 18 L 13 30 L 18 30 L 18 18 L 22 18 L 23 13 L 18 13 L 18 9.671875 C 18 7.884875 18.582766 7 20.259766 7 L 23 7 L 23 2.2050781 C 22.526 2.1410781 21.144906 2 19.253906 2 z"
+                  ></path>
+                </g>
+              </svg>
+              <p>Facebook ile Bağlan</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
